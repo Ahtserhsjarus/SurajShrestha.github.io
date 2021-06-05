@@ -55,4 +55,5 @@ table button {
   text-decoration: none;
   display: inline-block;
   width: 100px;
+  cursor: pointer;
 }

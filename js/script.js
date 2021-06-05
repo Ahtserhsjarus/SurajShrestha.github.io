@@ -17,8 +17,8 @@ fetch("https://api.github.com/users/Ahtserhsjarus/repos").then((res) =>
       <td>${repo.id}</td>
         <td>${repo.name}</td>
         <td>${repo.description}</td>
-        <td><a href='${repo.html_url}' target=_blank><button>GO TO Repo</button></a></td>
-        <td><a href='https://${repo.owner.login}.github.io/${repo.name}/' target=_blank><button>Demo</button></a></td>
+        <td><a href='${repo.html_url}' target=_blank><button style="cursor: pointer;">GO TO Repo</button></a></td>
+        <td><a href='https://${repo.owner.login}.github.io/${repo.name}/' target=_blank><button style="cursor: pointer;">Demo</button></a></td>
         <td>${repo.language}</td></tr>`;
       tableRow.innerHTML = tr;
     });

@@ -1,31 +1,54 @@
 <!DOCTYPE html>
-test
 <html lang="en">
 
 <head>
+    <!-- meta -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="portfolio, github api to list out all user Repositories">
+    <meta name="keywords" content="Suraj Shrestha Repositories">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title -->
     <title>Suraj Shrestha | Repositories</title>
 
+    <!-- styles -->
     <link rel="stylesheet" href="./css/styles.css">
+    <!-- icons -->
     <link rel="icon" href="image/user_folder.png">
 </head>
 
 <body>
+    <!-- loading -->
+    <!-- <div id="loading-content">
+        <span id="loading">Loading</span>
+    </div> -->
+
+    <!-- main container -->
     <div class="container">
         <header>
             <h1>Suraj Shrestha</h1>
-            <h2>Hello world</h2>
             <br>
             <h2>My Repositories</h2>
         </header>
     </div>
+
+    <!-- Repositories in table -->
     <table class="table">
         <!-- table is displayed here! -->
     </table>
+
+    <!-- Script -->
     <script src="./js/script.js"></script>
+    <!-- loading script -->
+    <!-- <script>
+    let el = document.getElementById('loading'),
+    i = 0,
+    load = setInterval(function () {
+            i = ++i % 4;
+            el.innerHTML = 'Loading' + Array(i + 1).join('.');
+        }, 600);
+        </script> -->
 </body>
 
 </html>

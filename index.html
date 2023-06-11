@@ -1,30 +1,167 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="portfolio, github api to list out all user Repositories">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suraj Shrestha | Repositories</title>
-
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="icon" href="image/user_folder.png">
+	<title>Suraj Shrestha | Portfolio - Home</title>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="portfolio, github api to list out all user Repositories">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="icon" href="images\icon.png" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
 </head>
 
-<body>
-    <div class="container">
-        <header>
-            <h1>Suraj Shrestha</h1>
-            <h2>Hello world</h2>
-            <br>
-            <h2>My Repositories</h2>
-        </header>
-    </div>
-    <table class="table">
-        <!-- table is displayed here! -->
-    </table>
-    <script src="./js/script.js"></script>
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper" class="fade-in">
+
+		<!-- Intro -->
+		<div id="intro">
+			<h1>My Portfolio</h1>
+			<p>Welcome to my Portfolio.</p>
+			<ul class="actions">
+				<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+			</ul>
+		</div>
+
+		<!-- Header -->
+		<header id="header">
+			<a href="repositories.html" class="logo">Repositories</a>
+		</header>
+
+		<!-- Nav -->
+		<nav id="nav">
+			<ul class="links">
+				<li class="active"><a href="index.html">Home</a></li>
+				<li><a href="repositories.html">My Repositories</a></li>
+				<li><a href="comingsoon.html">Blog</a></li>
+			</ul>
+			<ul class="icons">
+				<li><a href="https://www.twitter.com/me_jarus" class="icon brands fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
+				<li><a href="https://www.linkedin.com/in/suraj-shrestha-56344b16b/" class="icon brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+				<li><a href="https://github.com/Ahtserhsjarus" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+			</ul>
+		</nav>
+
+		<!-- Main -->
+		<div id="main">
+			<!-- Featured Post -->
+			<article class="post featured">
+				<header class="major">
+					<p class="date" id="p1">September 19, 2022</p>
+					<!-- Script to get today's date -->
+					<!-- <script>
+						var date = new Date();
+						const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+						var current_date = (monthNames[date.getMonth() + 1]) + " " + date.getDate() + ", " + date.getFullYear();
+						document.getElementById("p1").innerHTML = current_date;
+					</script> -->
+					<h2>My Name is Suraj Shrestha</h2>
+					<p>I'm a passionate developer but more importantly I'm about techonology.</p>
+				</header>
+				<a class="image"><img src="images/Stats and Graphs.png" alt="portfolio image" /></a>
+				<p>Hi,
+					<br />
+					<i class="fa fa-map-marker" aria-hidden="true"></i>&emsp;I am a resident of Kathmandu, Nepal.
+					<br />
+					<i class="fas fa-chalkboard-teacher" aria-hidden="true"></i>&emsp;I am currently pursuing my
+					Master's degree, MSc in IT & Applied Security (Data Analytics) at London Metropolitan University.
+					<br />
+					<i class="fas fa-graduation-cap" aria-hidden="true"></i>&emsp;I completed my bachelor's degree, BSc
+					(Hons) in Computing, in the year 2019.
+					<br />
+				</p>
+				<p>I thoroughly enjoy computer programming, hence I chose to further my career in it. I have worked on
+					some web development as well as ETL projects as an intern. Apart from that, I too like to spend my
+					free time reading books, travelling, and exploring new things.</p>
+				<p></p>
+				<ul class="actions special">
+					<li><a href="repositories.html" class="button large">Check My Github Projects</a></li>
+				</ul>
+			</article>
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<section>
+				<form method="post">
+					<div class="fields">
+						<div class="field">
+							<label for="name">Name</label>
+							<input type="text" name="name" id="name" />
+						</div>
+						<div class="field">
+							<label for="email">Email</label>
+							<input type="text" name="email" id="email" />
+						</div>
+						<div class="field">
+							<label for="message">Message</label>
+							<textarea name="message" id="message" rows="3"></textarea>
+						</div>
+					</div>
+					<ul class="actions">
+						<li><input type="submit" value="Send Message" disabled></li>
+					</ul>
+				</form>
+			</section>
+			<section class="split contact">
+				<section class="alt">
+					<h3>Address</h3>
+					<p>Kathmandu 44600<br />
+						Nepal</p>
+				</section>
+				<section>
+					<h3>Email</h3>
+					<p><a>
+							<pre><code>profile.getEmail();</code></pre>
+						</a></p>
+				</section>
+				<section>
+					<h3>Social</h3>
+					<ul class="icons alt">
+						<li><a href="https://www.twitter.com/me_jarus" class="icon brands alt fa-twitter"
+								target="_blank"><span class="label">Twitter</span></a></li>
+						<li><a href="https://www.linkedin.com/in/suraj-shrestha-56344b16b/"
+								class="icon brands alt fa-linkedin" target="_blank"><span
+									class="label">LinkedIn</span></a></li>
+						<li><a href="https://github.com/Ahtserhsjarus" class="icon brands alt fa-github"
+								target="_blank"><span class="label">GitHub</span></a></li>
+					</ul>
+				</section>
+			</section>
+		</footer>
+
+		<!-- Copyright -->
+		<div id="copyright">
+			<ul>
+				<li>&copy; Suraj Shrestha 2022</li>
+				<li>Design: <a href="https://html5up.net" target="_blank">HTML5 UP</a></li>
+			</ul>
+		</div>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="assets/js/userdetails.js"></script>
+
+	<!-- To do  
+		- social media sites
+	-->
 </body>
 
 </html>

@@ -1,54 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="icon" href="images\icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
 
-<head>
-    <!-- meta -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="portfolio, github api to list out all user Repositories">
-    <meta name="keywords" content="Suraj Shrestha Repositories">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Title -->
-    <title>Suraj Shrestha | Repositories</title>
+    <title>Suraj Shrestha | Portfolio - Maintenance</title>
+  </head>
+  <body>
+    <div id="nav">
+      <h3><b>Suraj</b> Shrestha <bn style="color: brown; font-size: 10px;">* This site is undergoing Maintenance</b></h3>
+      <button id="p1"></button>
+      <!-- Script to get today's date -->
+      <script>
+        var date = new Date();
+        const monthNames = [
+          "January",
+          "February",
+          "March",
+          "April",
+          "May",
+          "June",
+          "July",
+          "August",
+          "September",
+          "October",
+          "November",
+          "December",
+        ];
+        var current_date =
+          monthNames[date.getMonth() + 1] +
+          " " +
+          date.getDate() +
+          ", " +
+          date.getFullYear();
+        document.getElementById("p1").innerHTML = current_date;
+      </script>
+    </div>
+    <div id="main">
+      <div id="page">
+        <div id="loop">
+          <h1>
+            <b> Hi There !</b> Welcome to my portfolio<b><i></i></b>
+            <span>I am</span> Suraj Shrestha
+            <span><i>DATA ANALYST. </i></span>
+            <b>This</b> site<b><i> is</i></b>
+            <span> under</span>
+            <span><i> MAINTAINANCE. </i></span>
+          </h1>
+        </div>
+        <h4 class="desc">
+          As a data analyst, I translate data<br />
+          into valuable and comprehensible insights.
+        </h4>
+        <div id="more-desc">
+          <p>
+            My goal is to improve results,<br />
+            make the right decisions and save costs.<br />
+          </p>
+          <!-- <p>
+            I am experienced in machine learning, supervised and unsupervised algorithms <br />
+            and use data visualization techniques to present the results.<br />
+            I use SQL, R, Python, QlikView and Power BI for my data projects.
+          </p> -->
+          <br />
+        </div>
+        <h4 class="scroll">...SCROLL TO READ</h4>
+        <canvas></canvas>
+      </div>
+      <div id="page1">
+        <div id="right-text">
+          <h3>SERVICES</h3>
+          <h1>
+            Data analysis
+            <br />
+          </h1>
+        </div>
+        <div id="left-text">
+          <h2>
+            I am specialized in analyzing data.
+            <br />
+            Results, trends and recommendations
+            <br />
+            are clearly presented in reports or tools.
+          </h2>
+          <!-- <h3>(<a href="#">example</a>)</h3> -->
+          <h3>(example)</h3>
+        </div>
 
-    <!-- styles -->
-    <link rel="stylesheet" href="./css/styles.css">
-    <!-- icons -->
-    <link rel="icon" href="image/user_folder.png">
-</head>
+        <div class="test">
+          <p >Hi there. this page is undergoing MAINTAINANCE</p>
+        </div>
+      </div>
+      <div id="page2">
+        <div id="text1">
+          <h3></h3>
+          <h1>Data analytics</h1>
+        </div>
+        <div id="text2">
+          <h2>
+            Get more value from your data with<br />
+            prediction models and machine learning <br />techniques, for example
+            by predicting <br />
+            behavior or targeting the right customer.
+          </h2>
+          <h3>(example)</h3>
+        </div>
+      </div>
+      <div id="page3">
+        <h4 class="desc">
+          <br />
+          As a web developer, I help to design and create <br />
+          the perfect website for starters and freelancers. <br />
+          The website is optimized for <br />
+          desktop and smartphone.
+        </h4>
+        <div id="text3">
+          <h3></h3>
+          <h1>
+            Full-Stack<br />
+            web developer
+          </h1>
+        </div>
+      </div>
 
-<body>
-    <!-- loading -->
-    <!-- <div id="loading-content">
-        <span id="loading">Loading</span>
-    </div> -->
-
-    <!-- main container -->
-    <div class="container">
-        <header>
-            <h1>Suraj Shrestha</h1>
-            <br>
-            <h2>My Repositories</h2>
-        </header>
+      <footer>
+        <div>
+          <p style="color: brown;">Contact me: contact@surajshrestha.name.np</p>
+        </div>
+      </footer>
     </div>
 
-    <!-- Repositories in table -->
-    <table class="table">
-        <!-- table is displayed here! -->
-    </table>
-
-    <!-- Script -->
-    <script src="./js/script.js"></script>
-    <!-- loading script -->
-    <!-- <script>
-    let el = document.getElementById('loading'),
-    i = 0,
-    load = setInterval(function () {
-            i = ++i % 4;
-            el.innerHTML = 'Loading' + Array(i + 1).join('.');
-        }, 600);
-        </script> -->
-</body>
-
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
+      integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"
+      integrity="sha512-AMl4wfwAmDM1lsQvVBBRHYENn1FR8cfOTpt8QVbb/P55mYOdahHD4LmHM1W55pNe3j/3od8ELzPf/8eNkkjISQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js"></script>
+  </body>
 </html>

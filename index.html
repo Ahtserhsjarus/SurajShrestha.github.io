@@ -21,27 +21,27 @@
       <script>
         var date = new Date();
         const monthNames = [
-          "January",
-          "February",
-          "March",
-          "April",
-          "May",
-          "June",
-          "July",
-          "August",
-          "September",
-          "October",
-          "November",
-          "December",
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December",
         ];
         var current_date =
-          monthNames[date.getMonth() + 1] +
-          " " +
-          date.getDate() +
-          ", " +
-          date.getFullYear();
+            monthNames[date.getMonth()] +
+            " " +
+            date.getDate() +
+            ", " +
+            date.getFullYear();
         document.getElementById("p1").innerHTML = current_date;
-      </script>
+    </script>
     </div>
     <div id="main">
       <div id="page">

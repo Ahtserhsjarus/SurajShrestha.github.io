@@ -91,7 +91,8 @@ function clearButton() {
 
 async function requestStatus(repo) {
   try {
-    const response = await fetch('https://' + repo.owner.login + '.github.io/' + repo.name + '/', { method: 'GET', redirect: 'follow' });
+    const response = await fetch('https://surajshrestha.name.np/' + repo.name + '/', { method: 'GET', redirect: 'follow' });
+    // const response = await fetch('https://' + repo.owner.login + '.github.io/' + repo.name + '/', { method: 'GET', redirect: 'follow' });
     const result = response.status;
     return result;
   } catch (error) { }

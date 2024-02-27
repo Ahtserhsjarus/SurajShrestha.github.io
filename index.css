@@ -182,3 +182,9 @@ canvas {
 #page3 > #text3 > h1 {
   font-size: 70px;
 }
+#test{
+  top: 60%;
+  font-weight: 300;
+  color: #7c7c7c;
+  text-transform: uppercase;
+}

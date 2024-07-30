@@ -1,0 +1,111 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  html, body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  #main {
+    position: relative;
+    overflow: hidden;
+  }
+  #page {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  #nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 7%;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    padding: 0px 30px;
+    transition: opacity 0.5s ease;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  #nav.hidden-nav {
+    opacity: 0;
+  }
+  #nav > h3 {
+    font-weight: 400;
+    font-size: 22px;
+  }
+  #nav > button {
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+  }
+  #footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7%;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: #fff;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  }
+  #footer > p {
+    margin: 0;
+    color: #7c7c7c;
+  }
+  .contact-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+  }
+  .contact-form h1 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+  }
+  .contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+  }
+  .contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .contact-form button {
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  .contact-form button:hover {
+    background-color: #333;
+  }
+
+  /* width */
+::-webkit-scrollbar {
+  width: 5px;
+  background: none;
+}

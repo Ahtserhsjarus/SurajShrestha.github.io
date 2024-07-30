@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/contactme.css" />
+</head>
+<body>
+  <div id="nav">
+    <h3><b>Suraj</b> Shrestha <span style="color: brown; font-size: 10px;">* This site is undergoing Maintenance</span></h3>
+    <button id="p1"></button>
+  </div>
+
+  <div id="page">
+    <div class="contact-form">
+      <h1>Contact Me</h1>
+      <form action="mailto:contact@surajshrestha.name.np" method="get" onsubmit="submitForm(event)">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <div>
+        <div id="topNav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="/contactme.html">Contact Me</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+
+  <script>
+    var date = new Date();
+    const monthNames = [
+        "January", "February", "March", "April", "May", "June", "July",
+        "August", "September", "October", "November", "December"
+    ];
+    var current_date = monthNames[date.getMonth()] + " " + date.getDate() + ", " + date.getFullYear();
+    document.getElementById("p1").innerHTML = current_date;
+</script>
+
+  <script>
+    function submitForm(event) {
+      event.preventDefault();
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+
+      const bodyText = `Hello Suraj,%0D%0A%0D%0AYou have received a new message from the contact form.%0D%0A%0D%0A` +
+                       `Name: ${name}%0D%0A` +
+                       `Email: ${email}%0D%0A%0D%0A` +
+                       `Message:%0D%0A${message.replace(/\n/g, '%0D%0A')}` +
+                       `%0D%0A%0D%0A--%0D%0AThis is an automated message.`;
+
+      window.location.href = `mailto:contact@surajshrestha.name.np?subject=Contact Form Submission&body=${bodyText}`;
+    }
+  </script>
+</body>
+</html>

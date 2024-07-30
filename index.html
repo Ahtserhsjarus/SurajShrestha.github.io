@@ -1,152 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
+    <!-- Meta tags for character set, description, keywords, author, compatibility, and viewport settings -->
     <meta charset="UTF-8" />
+    <meta name="description" content="Portfolio website using GitHub Pages">
+    <meta name="keywords" content="Data Analytics Engineer, BI Developer, Data Analyst, Python Developer, Web Developer, SQL, R programming">
+    <meta name="author" content="Suraj Shrestha">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css" />
-    <link rel="icon" href="images\icon.png" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
-    />
 
-    <title>Suraj Shrestha | Portfolio - Maintenance</title>
-  </head>
-  <body>
+    <!-- Stylesheets and favicon -->
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="icon" href="images/icon.png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css" />
+
+    <!-- Page title -->
+    <title>Suraj Shrestha | Portfolio</title>
+</head>
+<body>
+
+    <div id="loading-screen">
+        <h1>Hold on a moment... </h1>
+        <p>Curating my best work for you!</p>
+    </div>
+
+    <!-- Navigation bar -->
     <div id="nav">
-      <h3><b>Suraj</b> Shrestha <bn style="color: brown; font-size: 10px;">* This site is undergoing Maintenance</b></h3>
-      <button id="p1"></button>
-      <!-- Script to get today's date -->
-      <script>
-        var date = new Date();
-        const monthNames = [
-            "January",
-            "February",
-            "March",
-            "April",
-            "May",
-            "June",
-            "July",
-            "August",
-            "September",
-            "October",
-            "November",
-            "December",
-        ];
-        var current_date =
-            monthNames[date.getMonth()] +
-            " " +
-            date.getDate() +
-            ", " +
-            date.getFullYear();
-        document.getElementById("p1").innerHTML = current_date;
-    </script>
+        <h3><b>Suraj</b> Shrestha <span style="color: brown; font-size: 10px;">* This site is undergoing Maintenance</span></h3>
+        <button id="p1"></button>
+
+        <!-- Script to display today's date -->
+        <script>
+            var date = new Date();
+            const monthNames = [
+                "January", "February", "March", "April", "May", "June", "July",
+                "August", "September", "October", "November", "December"
+            ];
+            var current_date = monthNames[date.getMonth()] + " " + date.getDate() + ", " + date.getFullYear();
+            document.getElementById("p1").innerHTML = current_date;
+        </script>
     </div>
+
+    <!-- Main content area -->
     <div id="main">
-      <div id="page">
-        <div id="loop">
-          <h1>
-            <b> Hi There !</b> Welcome to my portfolio<b><i></i></b>
-            <span>I am</span> Suraj Shrestha
-            <span><i>DATA ANALYST. </i></span>
-            <!-- <b>This</b> site<b><i> is</i></b>
-            <span> under</span>
-            <span><i> MAINTAINANCE. </i></span> -->
-          </h1>
-        </div>
-        <h4 class="desc">
-          As a data analyst, I translate data<br />
-          into valuable and comprehensible insights.
-        </h4>
-        <div id="more-desc">
-          <p>
-            My goal is to improve results,<br />
-            make the right decisions and save costs.<br />
-          </p>
-          <!-- <p>
-            I am experienced in machine learning, supervised and unsupervised algorithms <br />
-            and use data visualization techniques to present the results.<br />
-            I use SQL, R, Python, QlikView and Power BI for my data projects.
-          </p> -->
-          <br />
-        </div>
-        <h4 class="scroll">...SCROLL TO READ</h4>
-        <canvas></canvas>
-      </div>
-      <div id="page1">
-        <div id="right-text">
-          <h3>SERVICES</h3>
-          <h1>
-            Data analysis
-            <br />
-          </h1>
-        </div>
-        <div id="left-text">
-          <h3 id="test">
-            I am specialized in analyzing data.
-            <br />
-            Results, trends and recommendations
-            <br />
-            are clearly presented in reports or tools.
-          </h3>
-          <!-- <h3>(<a href="#">example</a>)</h3> -->
-          <!-- <h3>(example)</h3> -->
+        <div id="page">
+            <div id="loop">
+                <h1>
+                    <b> Hi There !</b> Welcome to my portfolio<b><i></i></b>
+                    <span>I am</span> Suraj Shrestha
+                    <span><i>DATA ANALYST. </i></span>
+                </h1>
+            </div>
+            <h4 class="desc">
+                As a data analyst, I translate data<br />
+                into valuable and comprehensible insights.
+            </h4>
+            <div id="more-desc">
+                <p>
+                    My goal is to improve results,<br />
+                    and help stakeholders make the right decisions.<br />
+                </p>
+            </div>
+            <h4 class="scroll">...SCROLL TO READ</h4>
+            <canvas></canvas>
         </div>
 
-      </div>
-      <div id="page2">
-        <div id="text1">
-          <h3></h3>
-          <h1>Data analytics</h1>
+        <div id="page1">
+            <div id="right-text">
+                <h3>SERVICES</h3>
+                <h1>Data analysis</h1>
+                <!-- <img src="./images/power-bi-vector-logo-2022.svg" alt="Power BI logo" width="70" height="70" style="margin-right: 20px;"> -->
+                <!-- <img src="./images/qlik-sense-seeklogo.svg" alt="Qlik Sense logo" width="40" height="50"> -->
+            </div>
+            <div id="left-text">
+                <h3 id="test">
+                    I am specialized in analyzing data.<br />
+                    Results, trends and recommendations<br />
+                    are clearly presented in reports or tools.
+                </h3>
+                <h3>
+                    <!-- <a href="/test.html" target="_blank" id="example-link">example</a> -->
+                </h3> 
+            </div>
+            <canvas></canvas>
         </div>
-        <div id="text2">
-          <h3 id="test">
-            Get more value from your data with<br />
-            prediction models and machine learning <br />techniques, for example
-            by predicting <br />
-            behavior or targeting the right customer.
-          </h3>
-          <!-- <h3>(example)</h3> -->
-        </div>
-      </div>
-      <div id="page3">
-        <h4 class="desc">
-          <br />
-          As a web developer, I help to design and create <br />
-          the perfect website for starters and freelancers. <br />
-          The website is optimized for <br />
-          desktop and smartphone.
-        </h4>
-        <div id="text3">
-          <h3></h3>
-          <h1>
-            Full-Stack<br />
-            web developer
-          </h1>
-        </div>
-      </div>
 
-      <footer>
-        <div>
-          <p style="color: brown;">Contact me: contact@surajshrestha.name.np</p>
+        <div id="page3">
+            <h4 class="desc">
+                <br />
+                I can develop scalable ETL/ELT pipelines for <br />
+                large-scale data, including batch loading <br />
+                and real-time data streaming.
+                </br>
+                <!-- <a href="/test.html" target="_blank" id="example-link">example</a> -->
+            </h4>
+            <div id="text3">
+                <h1>Data </br> Engineering</h1>
+            </div>
         </div>
-      </footer>
+
+        <div id="page1">
+            <div id="right-text">
+                <h1>Power Platform </br> Developer</h1>
+            </div>
+            <div id="left-text">
+                <h3 id="test">
+                    I’m a Microsoft PL-400 Certified Power<br />
+                     Platform Developer, specializing in creating<br />
+                     and integrating robust data solutions.
+                </h3>
+                <!-- <a href="/test.html" target="_blank" id="example-link">example</a> -->
+            </div>
+        </div>
+
+        <div id="page3">
+            <h4 class="desc">
+                <!-- "I build dynamic web applications with Django, focusing on backend development and functionality." -->
+                <br />
+                I build dynamic web applications<br />
+                with Django, focusing on backend <br />
+                development and functionality.</br>
+
+                <!-- <a href="/test.html" target="_blank" id="example-link">example</a> -->
+            </h4>
+            <div id="text3">
+                <h1>Django </br> Developer</h1>
+            </div>
+        </div>
+
+        <div id="page2">
+            <div id="text1">
+                <h1>Data analytics</h1>
+            </div>
+            <div id="text2">
+                <h3 id="test">
+                    Get more value from your data with<br />
+                    prediction models and machine learning<br />
+                    techniques, for example by predicting<br />
+                    behavior or targeting the right customer.
+                </h3>
+            </div>
+        </div>
+
+        <div id="page3">
+            <h4 class="desc">
+                <br />
+                As a web developer, I help to design and create<br />
+                the perfect website for starters and freelancers.<br />
+                The website is optimized for<br />
+                desktop and smartphone.
+            </h4>
+            <div id="text3">
+                <h1>Full-Stack<br />web developer</h1>
+            </div>
+        </div>
+
+        <!-- Footer with contact information -->
+        <footer>
+            <div>
+                <div id="topNav">
+                    <ul>
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="/contactme.html">Contact Me</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
     </div>
 
+    <!-- External JavaScript libraries -->
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
-      integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"
-      integrity="sha512-AMl4wfwAmDM1lsQvVBBRHYENn1FR8cfOTpt8QVbb/P55mYOdahHD4LmHM1W55pNe3j/3od8ELzPf/8eNkkjISQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="script.js"></script>
-  </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js" integrity="sha512-AMl4wfwAmDM1lsQvVBBRHYENn1FR8cfOTpt8QVbb/P55mYOdahHD4LmHM1W55pNe3j/3od8ELzPf/8eNkkjISQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/script.js"></script>
+
+    <script>
+        window.addEventListener('load', function() {
+            const loadingScreen = document.getElementById('loading-screen');
+            loadingScreen.classList.add('hidden');
+        });
+    </script>
+    
+    
+    
+</body>
 </html>

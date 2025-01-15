@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta tags for character set, description, keywords, author, compatibility, and viewport settings -->
+  <meta charset="UTF-8" />
+  <meta name="description" content="Portfolio website using GitHub Pages">
+  <meta name="keywords" content="Data Analytics Engineer, BI Developer, Data Analyst, Python Developer, Web Developer, SQL, R programming, PL-400 Certified Power Platform developer">
+  <meta name="author" content="Suraj Shrestha">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/contactme.css" />
+
+  <!-- Page title -->
+  <title>Suraj Shrestha | Projects </title>
+</head>
+<body>
+  <div id="nav">
+    <h3><b>Suraj</b> Shrestha <span style="color: brown; font-size: 10px;">* This site is undergoing Maintenance</span></h3>
+    <button id="p1"></button>
+  </div>
+
+  <div id="page">
+    
+  </div>
+
+  <footer>
+    <div>
+        <div id="topNav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="/About.html">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="/contactme.html">Contact Me</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<script>
+    var date = new Date();
+    const monthNames = [
+            "January", "February", "March", "April", "May", "June", "July",
+            "August", "September", "October", "November", "December"];
+    var current_date = monthNames[date.getMonth()] + " " + date.getDate() + ", " + date.getFullYear();
+    document.getElementById("p1").innerHTML = current_date;
+    </script>
+
+</body>
+</html>
